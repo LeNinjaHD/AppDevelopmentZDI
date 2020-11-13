@@ -1,4 +1,3 @@
-##BONUS 2:
 void main() {
   Essen schokolade = Essen("Lecker", 100000000);
   schokolade.zeigeEigenschaften();
@@ -21,3 +20,22 @@ class Essen {
     print(menge);
   }
 }
+
+##BONUS 2:
+void main() {
+  Message message = Message("Edgar", "Hallo!");
+  message.sendMessage();
+}
+class Message {
+  String username;
+  String message;
+  
+  Message(String username, String message) {
+    this.username = username;
+    this.message = message;
+  }
+  
+  void sendMessage() {
+    print(username + ": " + message);
+  }
+} 
